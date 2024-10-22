@@ -1,0 +1,184 @@
+/*Q1*/
+h1 {
+  text-align: center;
+  font-family: Arial;
+  font-size: 64px;
+}
+/*Q2*/
+p {
+  text-align: justify;
+}
+/*Q3 rajout de la balise <i> dans sur les mots concernés*/
+/*Q4*/
+body {
+  width: 80%;
+  min-width: 800px;
+  max-width: 1200px;
+  margin: auto;
+  background-image: url("data/img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/*Q5*/
+
+#gallery {
+  text-align: center;
+}
+
+#gallery img {
+  width: 800px; /* Fixe la largeur de l'image à 800px */
+}
+
+#gallery figure {
+  overflow: hidden;
+}
+
+/*Q6*/
+.map {
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  border: 2px solid #000000;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*Q7 (voir Q9 pour une partie de la réponse*/
+#logo {
+  float: right;
+}
+
+#logo img {
+  height: 100px;
+}
+
+/*Q8*/
+#navigateur {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  text-align: center; /* Pour centrer les liens */
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  padding: 10px;
+  color: #000000;
+  text-decoration: none;
+  border: 2px solid #0b0b0b;
+  border-radius: 10px;
+  background-color: rgba(11, 85, 246, 0.56);
+}
+nav a:visited {
+  color: #000000; /* Couleur des liens visités */
+}
+
+/*Q9*/
+h2 {
+  background-image: url("data/img/Blason_Limoges_icone.png");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: 25px;
+  background-position: center left;
+}
+/*Q10*/
+h2:not(#t_com):hover {
+  cursor: pointer;
+}
+
+/*Q11*/
+.aste {
+  color: red;
+}
+
+.formulaire {
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.formulaire label {
+  margin-right: 5px;
+  text-align: right;
+  min-width: 120px;
+}
+/*dernière ligne sert à créé des étiquette de la même longueur pour qu'elle soit au même niveau, comme ca peut importe la taille du label
+les étiquettes seront tout de même alignée à droite */
+
+/*Rajout*/
+/*Tableau*/
+.tableau {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #9b979784;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.tableau caption {
+  margin-bottom: 10px;
+}
+
+.tableau td,
+.tableau th {
+  border: 1px solid #9b979784;
+}
+
+.tableau td[colspan="3"] {
+  text-align: center;
+  font-weight: bold;
+  background-color: #173bae;
+  color: white;
+}
+
+.tableau td[rowspan="3"] {
+  vertical-align: middle;
+}
+
+.tableau td[colspan="2"] {
+  text-align: center;
+}
+
+.tableau tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+.tableau tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+
+.tableau tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.tableau tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+/*Zoom image*/
+#gallery figure img {
+  transition: transform 0.8s;
+}
+
+#gallery figure:hover img {
+  transform: scale(1.018);
+}
+
+/*Image à coter du formulaire*/
+#image-formulaire {
+  float: right;
+  padding-right: 35%;
+  width: 230px;
+  height: auto;
+}
